@@ -1,0 +1,318 @@
+/*-----------------menu----------------*/
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav > li{
+    padding: 0 10px;
+}
+
+.navbar-nav > li > a{
+    color: #fff;
+}
+
+.sticky{
+    background-color:  #4DC5F3;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+/*----------------slider-----------------*/
+.slider{
+    background: url('../img/slider_2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 625px;
+    opacity: 0.7;
+    position: relative;
+}
+
+.main_text{
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 160px;
+}
+
+.main_sub{
+    letter-spacing: 2px;
+}
+
+#down-arrow{
+    font-size: 38px;
+    position: absolute;
+    left: 50%;
+    top: 140%;
+}
+
+/*-----------About us----------*/
+.about-us{
+    background-color: #fff;
+    color: #333;
+}
+
+.about-us h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 64px;
+    left: -63px;
+    color: #4DC5F3;
+    font-weight: bold;
+}
+
+.about-us h2{
+    font-weight: 100px;
+    font-size: 42px;
+    line-height: 50px ;
+    margin-left: 35px;
+}
+
+.about-img{
+    background: url('../img/about_us.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin-top: 50px;
+}
+
+/*---------------about company----------------*/
+.about-company{
+    background-color: #f4f4f4;
+}
+
+.about-item{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px 30px;
+}
+
+.about-item i{
+    font-size: 42px;
+}
+
+.about-item h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-item hr{
+    width: 45px;
+    height: 3px;
+    background-color: #4DC5F3;
+    border: none;
+}
+
+.about-item p{
+    margin-top: 20px;
+}
+
+.about-item:hover{
+    background-color: #4dc5f3;
+    transition: 1000ms;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+
+.about-item:hover hr{
+    background-color: #fff;
+}
+
+/*-----------service---------------*/
+.service{
+    background-color: #fff;
+    padding: 100px 0px;
+}
+
+.service h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 64px;
+    left: -49px;
+    color: #4DC5F3;
+    font-weight: bold;
+}
+
+.service h2{
+    font-weight: 100px;
+    font-size: 36px;
+    line-height: 50px ;
+    margin-left: 35px;
+}
+
+.service p{
+    line-height: 20px;
+    margin top: 30px;
+}
+
+
+/*-----------------advertise---------------------*/
+.advertise{
+    background: url('../img/about_us.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    opacity: 0.8;
+}
+
+.advertise h3{
+    color: #000;
+    line-height: 50px;
+    padding-top: 110px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 8px #1da1f2;
+    font-weight: bold;
+}
+
+/*-------------blog---------------*/
+.blog{
+    background: linear-gradient(to right, #222, #1da1f2);
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+
+.blog h3{
+    font-size: 32px;
+}
+
+.blog .card{
+    background-color: #252525;
+}
+
+.blog .card:hover{
+    transform: translateY(-5px) scale(1);
+    transition: linear .1s;
+}
+
+/*-------------footer---------------*/
+.footer{
+    background-color: #000;
+    color: #fff;
+}
+
+/*-----------copyright---------*/
+.copyright{
+    background-color:#1da1f2;    
+}
+
+/*-----------buttom---------*/
+#topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    background-color:#1da1f2;
+    color:#fff;
+    border:none;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    display: none;
+}
+
+/*-----------pre-loader---------*/
+.loader-container{
+    width: 100%;
+    height: 625px;
+    background-color: #000;
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    /*
+    padding-top: 250px;
+    padding-left: 600px;*/
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #1da1f2;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+  
+}
+
+@keyframes loader{
+    25%{
+        color: #f00;
+    }
+    50%{
+        color: #0f0;
+    }
+    75%{
+        color: #ff0;
+    }
+    to{
+        transform: rotate(360deg);
+    }    
+}
+
+/*------------about page--------------*/
+.about-page{
+    background: url('../img/about_page.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+/*----------breadcrumb---------*/
+.breadcrumb{
+    background: transparent;
+    padding: 160px 110px;
+}
+
+.breadcrumb-item.active {
+    color: #fff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;   
+}
+
+/*-----------about-detail------------*/
+.about-detail hr{    
+    width: 60px;
+    height: 3px;
+    background-color: #4DC5F3;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.about-detail p{
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
